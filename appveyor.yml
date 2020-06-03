@@ -6,7 +6,6 @@ install:
   - npm install
 
 build_script:
-  - echo "There is no build process"
 
 test_script:
   - sudo safaridriver --enable
