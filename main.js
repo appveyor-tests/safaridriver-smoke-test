@@ -31,6 +31,8 @@ const executeTest = async function () {
       await driver.init({ 'allowW3C': true, 'browserName': 'safari' });
       await driver.get('https://google.com');
       console.log("Safari worked");
+    } catch (e) {
+      console.log(e);
     } finally {
       if (driver != null) {
         try {
@@ -40,6 +42,8 @@ const executeTest = async function () {
         }
       }
     }
+  } catch(e) {
+    console.log(e);
   } finally {
     if (servicePid != null) {
       // quit safaridriver
