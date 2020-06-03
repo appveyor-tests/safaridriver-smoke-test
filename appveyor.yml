@@ -3,6 +3,7 @@ image: macos
 install:
   - nvm install 12.13.1
   - nvm use 12.13.1
+  - npm install
 
 build_script:
   - echo "There is no build process"
