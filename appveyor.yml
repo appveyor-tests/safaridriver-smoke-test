@@ -6,8 +6,11 @@ install:
   - npm install
 
 build_script:
+  - echo "No build script required"
 
 test_script:
-  - sudo safaridriver --enable
-  - node main.js
+  - sh: >-
+      set -e;
+      sudo safaridriver --enable;
+      node main.js;
 
