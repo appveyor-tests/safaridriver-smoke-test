@@ -11,6 +11,6 @@ build_script:
 test_script:
   - sh: >-
       set -e;
-      sudo safaridriver --enable;
+      #sudo safaridriver --enable;
       node main.js;
 
