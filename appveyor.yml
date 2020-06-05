@@ -9,7 +9,7 @@ build_script:
   - echo "No build script required"
 
 test_script:
-  - sh: >-
+  - sh: |
       set -e;
       #sudo safaridriver --enable;
       node main.js;
